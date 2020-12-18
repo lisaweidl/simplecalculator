@@ -18,23 +18,23 @@
 
 <script>
 export default {
-    name: 'App',
-    data () {
-        return {
-            number1: 0,
-            number2: 0,
-            result: 0
-        }
+  name: "App",
+  data() {
+    return {
+      number1: 0,
+      number2: 0,
+      result: 0,
+    };
+  },
+  methods: {
+    add() {
+      this.result = this.number1 + this.number2;
     },
-    methods: {
-        add () {
-            this.result = this.number1 + this.number2
-        },
-        subtract () {
-            this.result = this.number1 - this.number2
-        }
-    }
-}
+    subtract() {
+      this.result = this.number1 - this.number2;
+    },
+  },
+};
 </script>
 
 <style>
